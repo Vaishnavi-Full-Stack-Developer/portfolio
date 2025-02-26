@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        font-family: poppins sans-serif;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        background-color: #2c3639;
+      }
+      .home {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .home-one {
+        height: 100%;
+        width: 50%;
+        /* background-color: darkseagreen; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .intro {
+        height: 200px;
+        width: 100%;
+        background-color: #2c3639;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 60px;
+        text-shadow: 5px rgb(251, 151, 151);
+        color: aliceblue;
+        margin-top: 50px;
+      }
+      .head-one {
+        z-index: 2;
+      }
+      .divone {
+        /* background: #C30E59; */
+        background: linear-gradient(#c30e59 50%, #6d3b62 100%);
+        height: 20px;
+        width: 60%;
+        top: 185px;
+        position: relative;
+        top: -10%;
+      }
+
+      .home-two {
+        height: 70%;
+        width: 85%;
+        background-color: #2c3639;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: poppins sans-serif;
+        padding-left: 20px;
+        color: #718096;
+      }
+      .home-two-one {
+        height: 80px;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+      button {
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        background: linear-gradient(#c30e59 50%, #772d94 100%);
+        border-radius: 25px;
+        box-shadow: 2px white;
+        border: 1px solid whitesmoke;
+      }
+      .home-three {
+        height: 100%;
+        width: 50%;
+        background-color: #2c3639;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        font-size: 25px;
+        color: aliceblue;
+      }
+      .box-one {
+        height: 100px;
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 30px;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 50;
+      }
+      .box-two {
+        height: 100px;
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      /* media */
+      @media (max-width: 1000px) {
+        .home {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* .home-one {
+        height: 100%;
+        width: 50%;
+        /* background-color: darkseagreen; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      } */
+      }
+      @media (max-width: 801px) and (max-width: 1100px) {
+        .home {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+      }
+      /* .home-one {
+        height: 100%;
+        width: 50%;
+        /* background-color: darkseagreen; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      } */
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <!-- section 2 start -->
+      <!-- home page open -->
+      <div class="home" id="home">
+        <!-- home one open -->
+        <div class="home-one">
+          <!-- intro open -->
+          <div class="intro">
+            <!-- head one  -->
+            <div class="head-one">Welcome to my <br /></div>
+            <!-- divone -->
+            <div class="divone"></div>
+            <!-- head two -->
+            <div class="head-two">Portfolio!</div>
+          </div>
+          <!-- home-two open -->
+          <div class="home-two">
+            <p>
+              I am a front-end developer with 3 years of proven experience in
+              the field. I am skilled in Search Engine Optimization, Next.js,
+              React.js, Tailwind CSS, and JavaScript. I am passionate about
+              creating interactive and beautiful user interfaces, along with the
+              required functionalities on the front end.One of my favourite
+              technologies to work with is React.js, particularly within the
+              MERN / MEVN stack. My Experties include Next.js 14✨ & React.js
+              for high-scale application development.
+            </p>
+
+            <!-- home-two-one -->
+            <div class="home-two-one">
+              <button>Hire Me!</button>
+              <button>My Resume</button>
+            </div>
+          </div>
+        </div>
+        <!-- home one close -->
+        <div class="home-three">
+          <img
+            src="https://media.istockphoto.com/id/1289220545/photo/beautiful-woman-smiling-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=qmOTkGstKj1qN0zPVWj-n28oRA6_BHQN8uVLIXg0TF8="
+            alt=""
+            height="400px"
+            width="500px"
+          />
+        </div>
+      </div>
+    </body>
+    <!-- home page close -->
+  </body>
+</html>
