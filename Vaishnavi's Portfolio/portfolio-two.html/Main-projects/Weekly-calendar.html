@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Calendar</title>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .title {
+        padding-top: 10%;
+        text-align: center;
+      }
+      .grid-container {
+        width: 80%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2px;
+        margin-top: 5%;
+        margin-left: 10%;
+      }
+      .grid-item-one {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .grid-item-two {
+        width: 100%;
+        height: 100%;
+        border: 1px solid blue;
+      }
+      .grid-item-three {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .grid-item-four {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .grid-item-five {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .grid-item-six {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .grid-item-seven {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .one {
+        height: 70px;
+        background-color: #3d90d7;
+        color: white;
+        font-size: 30px;
+        padding-top: 5%;
+        text-align: center;
+      }
+      .two {
+        margin-top: 10%;
+        margin-left: 10%;
+      }
+      .task-card-personal {
+        height: 60px;
+        width: 90%;
+        background-color: #3a9bf0;
+        margin-top: 5%;
+        border-radius: 10%;
+      }
+      .task-body {
+        height: 100%;
+        width: 98%;
+        background-color: aliceblue;
+        margin-left: 2px;
+        padding-left: 10px;
+      }
+      .task-card-personal-green {
+        height: 60px;
+        width: 90%;
+        background-color: #5ca866;
+        border-radius: 10%;
+      }
+      .task-body-green {
+        height: 100%;
+        width: 98%;
+        background-color: rgb(219, 241, 228);
+        margin-left: 2px;
+        padding-left: 5px;
+      }
+      .task-card-personal-red {
+        height: 60px;
+        width: 90%;
+        background-color: #c61111;
+        border-radius: 10%;
+      }
+      .task-body-red {
+        height: 100%;
+        width: 98%;
+        background-color: rgb(240, 200, 195);
+        margin-left: 2px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- title -->
+    <h1 class="title">WEEKLY CALENDAR</h1>
+    <!-- GRID Container OPEN -->
+    <div class="grid-container">
+      <!-- Grid item ONE - sunday -->
+      <div class="grid-item-one">
+        <div class="one">Sunday</div>
+        <div class="two">
+          May 5 <br />
+          <div class="task-card-personal-green">
+            <div class="task-body-green"><p>Bruch with family 11 P.M.</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid item TWO - monday -->
+      <div class="grid-item-two">
+        <div class="one">Monday</div>
+        <div class="two">
+          May 6 <br />
+          <div class="task-card-personal">
+            <div class="task-body">
+              <p>
+                Team meeting - <br />
+                10 A.M.
+              </p>
+            </div>
+          </div>
+          <div class="task-card-personal">
+            <div class="task-body">
+              <p>
+                Project deadline - <br />
+                5P.M.
+              </p>
+            </div>
+
+            <div class="task-card-personal-green">
+              <div class="task-body-green">
+                <p>
+                  GYM- <br />
+                  7 P.M.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid item THREE - tuesday -->
+      <div class="grid-item-three">
+        <div class="one">Tuesday</div>
+        <div class="two">
+          May 7 <br />
+
+          <div class="task-card-personal-red">
+            <div class="task-body-red">
+              <p>
+                Dr. Appointment - <br />
+                2 P.M.
+              </p>
+            </div>
+          </div>
+
+          <div class="task-card-personal">
+            <div class="task-body">
+              <p>
+                Client Call - <br />
+                4 P.M.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid item FOUR - wednesday -->
+      <div class="grid-item-four">
+        <div class="one">Wednesday</div>
+        <div class="two">
+          May 8<br />
+          <div class="task-card-personal">
+            <div class="task-body">
+              <p>
+                Workshop - <br />All day - <br />
+                2 P.M.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid item FIVE - thursday -->
+      <div class="grid-item-five">
+        <div class="one">Thursday</div>
+        <div class="two">
+          May 9 <br />
+          <div class="task-card-personal">
+            <div class="task-body">
+              <p>
+                Standup Meeting - <br />
+                09:30 A.M.
+              </p>
+            </div>
+          </div>
+          <div class="task-card-personal-green">
+            <div class="task-body-green">
+              <p>
+                Dinner with Friends - <br />
+                8 P.M.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid item SIX - friday -->
+      <div class="grid-item-six">
+        <div class="one">Friday</div>
+        <div class="two">
+          May 10<br />
+          <div class="task-card-personal">
+            <div class="task-body">
+              <p>
+                Weekly Review - <br />
+                03:00 A.M.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid item SEVEN - saturday -->
+      <div class="grid-item-seven">
+        <div class="one">Saturday</div>
+        <div class="two">
+          May 11 <br />
+          <div class="task-card-personal-green">
+            <div class="task-body-green">
+              <p>Weekend Gateaway!!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GRID Container CLOSE -->
+  </body>
+</html>

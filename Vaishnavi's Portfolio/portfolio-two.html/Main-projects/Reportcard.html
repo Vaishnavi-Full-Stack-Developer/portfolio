@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Card</title>
+    <style>
+      table {
+        width: 500px;
+        height: auto;
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: 50px auto;
+        font-family: Arial, sans-serif;
+        margin-top: 190px;
+      }
+
+      caption {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+      }
+
+      td[colspan="3"] {
+        text-align: right;
+        font-weight: bold;
+      }
+
+      td:last-child {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Report Card
+      </caption>
+      <!-- Header Row -->
+      <tr>
+        <th>Sr No.</th>
+        <th>Subject</th>
+        <th>Out of</th>
+        <th>Marks</th>
+      </tr>
+      <!-- Subjects -->
+      <tr>
+        <td>1.</td>
+        <td>English</td>
+        <td>100</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Science</td>
+        <td>100</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Social Science</td>
+        <td>100</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Hindi</td>
+        <td>100</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Computer</td>
+        <td>100</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Maths</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <!-- Total and Percentage -->
+      <tr>
+        <td colspan="3">Total Marks</td>
+        <td>565</td>
+      </tr>
+      <tr>
+        <td colspan="3">Percentage Obtained:</td>
+        <td>94.16%</td>
+      </tr>
+    </table>
+  </body>
+</html>

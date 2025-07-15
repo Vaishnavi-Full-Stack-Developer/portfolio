@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Projects</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #393e46;
+        color: #fff;
+      }
+      body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+      .container {
+        padding: 40px 5%;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .section-heading {
+        margin-top: 10vh;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .section-heading h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #4fc3f7;
+      }
+
+      .section-heading p {
+        font-size: 1rem;
+        color: #cccccc;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .project-card {
+        background-color: #1c1c1c;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        background-color: #2e2e2e;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .card-content h3 {
+        font-size: 1.4rem;
+        color: #4fc3f7;
+        margin-bottom: 10px;
+      }
+
+      .card-content p {
+        font-size: 0.95rem;
+        color: #ddd;
+        margin-bottom: 15px;
+      }
+
+      .card-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .card-buttons a {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(71, 193, 241);
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+        font-size: 0.9rem;
+      }
+
+      .card-buttons a:hover {
+        background-color: #008080b3;
+      }
+
+      /* NAVBAR section CSS */
+      nav {
+        height: 12vh;
+        width: 100%;
+        background-color: #393e46;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+        backdrop-filter: blur(10px);
+        top: 0;
+        left: 0;
+      }
+
+      .navbar {
+        margin-left: 5%;
+        height: 8vh;
+        width: 90%;
+        box-shadow: 0 10 20px rgb(251, 255, 255);
+        border-radius: 2.2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        background-color: aliceblue;
+      }
+
+      /* nav-left section CSS */
+      .nav-left {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        margin-right: 25%;
+      }
+
+      /* nav-middle section CSS */
+      .nav-middle {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .nav-items {
+        text-decoration: none;
+        color: rgb(47, 186, 241);
+        transition: all 0.3s ease;
+      }
+
+      .nav-items:hover {
+        color: rgb(1, 1, 1);
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      /* nav-right section CSS */
+      .nav-right {
+        width: 25%;
+        height: 90%;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 30px;
+      }
+
+      .contact-items {
+        margin-left: 5vh;
+        color: rgb(47, 186, 241);
+
+        text-decoration: none;
+      }
+
+      .contact-items:hover {
+        color: black;
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <!-- navbar section open -->
+      <nav>
+        <div class="navbar">
+          <!-- nav-left section open -->
+          <div class="nav-left">𝑽𝒂𝒊𝒔𝒉𝒏𝒂𝒗𝒊'𝒔 𝑷𝒐𝒓𝒕𝒇𝒐𝒍𝒊𝒐</div>
+          <!-- nav-left section open -->
+
+          <!-- nav-middle section open -->
+          <div class="nav-middle">
+            <a href="#home" class="nav-items">HOME</a>
+            <a href="#about" class="nav-items">ABOUT</a
+            ><a href="#project" class="nav-items">PROJECTS</a>
+            <a href="#contact" class="nav-items">CONTACT</a>
+          </div>
+          <!-- nav-middle section close -->
+
+          <!-- nav-right section open -->
+
+          <div class="nav-right">
+            <!-- github -->
+            <a href=" " class="contact-items fab fa-github"></a>
+            <!-- email -->
+            <a
+              href="mailto:vaishnavikinekar11062@gmail.com"
+              class="contact-items fas fa-envelope"
+            ></a>
+            <!-- linked-in -->
+            <a href="" class="contact-items fab fa-linkedin-in"></a>
+          </div>
+          <!-- nav-right section close -->
+        </div>
+      </nav>
+      <!-- navbar section close -->
+
+      <div class="section-heading">
+        <h1>Live Project's</h1>
+        <p>
+          Below are beginner to intermediate-level Live Projects created by me
+          using pure
+          <b> HTML</b> and basic <b>CSS</b>.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img
+            src="https://media.istockphoto.com/id/1340256496/photo/shot-of-a-young-woman-decorating-a-table-with-place-card-holders-in-preparation-for-a-wedding.jpg?s=612x612&w=0&k=20&c=gBQHa3_HywGsZv4MYRfvMpWAsgLLUkQvyMbG-lHBOSo="
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Swarajya Event Management</h3>
+
+            <div class="card-buttons">
+              <a href="../livewebsite/Swarajya_Event_Management/SEM.html" 
+                >Swarajya Event Management</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4-->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card">
+          <img src="" alt="" />
+          <div class="card-content">
+            <h3>...</h3>
+            <p>..</p>
+            <div class="card-buttons">
+              <a href="..." t>View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

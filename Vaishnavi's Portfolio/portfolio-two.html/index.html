@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi's | Portfolio</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWcuuyrUuTvxTSlAcJ2AuptFwcya9nIYcyJR-hKc79-_VvLm_nCYlDv_4UpE7Vrp_GpKM&usqp=CAU"
+    />
+    <!-- <link rel="stylesheet" href="./portfolio-one.css" /> -->
+    <!-- CDN for Contact Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"); */
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: "Segoe UI", sans-serif;
+    }
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    /* main-container CSS */
+    .main-container {
+      width: 100vw;
+      height: auto;
+    }
+
+    /* NAVBAR section CSS */
+    nav {
+      height: 12vh;
+      width: 100%;
+      background-color: #393e46;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: fixed;
+      z-index: 100;
+    }
+
+    .navbar {
+      margin-left: 5%;
+      height: 8vh;
+      width: 90%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+      border-radius: 2.2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      background-color: aliceblue;
+    }
+
+    /* nav-left section CSS */
+    .nav-left {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      margin-right: 25%;
+    }
+
+    /* nav-middle section CSS */
+    .nav-middle {
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-items {
+      text-decoration: none;
+      color: rgb(47, 186, 241);
+      transition: all 0.3s ease;
+    }
+
+    .nav-items:hover {
+      color: rgb(1, 1, 1);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    /* nav-right section CSS */
+    .nav-right {
+      width: 25%;
+      height: 90%;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    
+
+    .contact-items {
+      margin-left: 5vh;
+      color: rgb(47, 186, 241);
+
+      text-decoration: none;
+    }
+
+    .contact-items:hover {
+      color: black;
+      font-size: 1.4rem;
+    }
+
+    /* HOME section CSS */
+    .home {
+      width: 100%;
+      height: 88vh;
+      background-color: #393e46;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 15vh;
+    }
+
+    .home-left {
+      width: 40%;
+      height: 100%;
+      margin-top: 25%;
+      padding-right: -5%;
+      color: white;
+    }
+
+    .resume-btn {
+      height: 20vh;
+      width: 50vw;
+      background-color: rgb(47, 186, 241);
+      text-decoration: none;
+      color: rgb(28, 28, 28);
+    }
+
+    .name {
+      font-size: 80px;
+      color: rgb(87, 199, 244);
+    }
+
+    .home-right img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
+
+   
+
+    /* ABOUT section CSS */
+    .about {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #393e46;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .about-one {
+      height: 20%;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      /* border: 1px solid black; */
+    }
+
+    .abt {
+      font-size: 3rem;
+    }
+
+    .about-two {
+      margin-top: 5%;
+      height: 80%;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .one {
+      height: 400px;
+      width: 30%;
+      background: rgb(255, 255, 255);
+      color: #000000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 20px;
+    }
+
+    .one:hover {
+      height: 410px;
+      width: 28%;
+      background-color: rgb(144, 213, 238);
+      transform: translateX(0 px);
+    }
+
+    .detail {
+      font-size: 1.5rem;
+    }
+
+
+
+    /* PROJECT section CSS */
+    .project {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #393e46;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .p-one {
+      height: 30%;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+
+    .p-two {
+      height: 70%;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 5%;
+    }
+
+    .project-card {
+      height: 350px;
+      width: 28%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: all 0.5s ease;
+    }
+
+    .project-card h2 {
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+
+      color: black;
+    }
+    .anchor-tag {
+      text-decoration: none; /* Removes underline */
+      color: inherit;
+    }
+    /* CONTACT section CSS */
+    .contact {
+      width: 100%;
+      height: 88vh;
+      background-color: #393e46;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contact-one {
+      height: 20%;
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+
+    .contact-two {
+      height: 60%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .cont-1 {
+      width: 30%;
+      height: 80%;
+      box-shadow: 0 4px 20px rgba(243, 243, 243, 0.1);
+      padding-left: 5%;
+    }
+    .cont-1:hover {
+      transform: translateX(0 px);
+    }
+    .contact-card {
+      height: 350px;
+      width: 30%;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin-left: 10%;
+      margin-top: 10%;
+    }
+
+    .cont-2 {
+      width: 50%;
+      height: 80%;
+    }
+
+    .contact-footer {
+      height: 20%;
+      width: 100%;
+      background-color: rgb(255, 245, 245);
+      text-align: center;
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+  </style>
+  <body>
+    <div class="main-container">
+      <!-- navbar section open -->
+      <nav>
+        <div class="navbar">
+          <!-- nav-left section open -->
+          <div class="nav-left">𝑽𝒂𝒊𝒔𝒉𝒏𝒂𝒗𝒊'𝒔 𝑷𝒐𝒓𝒕𝒇𝒐𝒍𝒊𝒐</div>
+          <!-- nav-left section open -->
+
+          <!-- nav-middle section open -->
+          <div class="nav-middle">
+            <a href="#home" class="nav-items">HOME</a>
+            <a href="#about" class="nav-items">ABOUT</a
+            ><a href="#project" class="nav-items">PROJECTS</a>
+            <a href="#contact" class="nav-items">CONTACT</a>
+          </div>
+          <!-- nav-middle section close -->
+
+          <!-- nav-right section open -->
+
+          <div class="nav-right">
+            <!-- github -->
+            <a href=" " class="contact-items fab fa-github"></a>
+            <!-- email -->
+            <a
+              href="mailto:vaishnavikinekar11062@gmail.com"
+              class="contact-items fas fa-envelope"
+            ></a>
+            <!-- linked-in -->
+            <a href="" class="contact-items fab fa-linkedin-in"></a>
+          </div>
+          <!-- nav-right section close -->
+        </div>
+      </nav>
+      <!-- navbar section close -->
+
+      <!-- home section open -->
+      <div class="home" id="home">
+        <div class="home-left">
+          <!-- details -->
+          <span class="name">Vaishnavi Kinekar </span> <br />
+          <h1 style="font-family: 'Times New Roman', Times, serif">
+            Web Developer
+          </h1>
+          <br />
+          <p style="font-family: 'Courier New', Courier, monospace">
+            I'm a passionate web developer with a creative edge, <br />
+            skilled in both front-end and learning back-end development. <br />
+            I specialize in building seamless, high-performing web <br />
+            applications that deliver exceptional user experiences.
+          </p>
+          <br />
+          <a class="resume-btn" href="./assets/resume.pdf" download
+            >Download Resume</a
+          >
+        </div>
+        <!-- portfolio image  -->
+        <div class="home-right">
+          <img
+            src="https://t4.ftcdn.net/jpg/04/36/76/75/360_F_436767512_zRG6J8AqsUZ70khkEqGG2z1PrjWWDel3.jpg"
+            alt=""
+            height="82%"
+            width="90%"
+            style="border-radius: 40%"
+          />
+        </div>
+      </div>
+      <!-- home section close -->
+
+      <!-- about section open -->
+      <div class="about" id="about">
+        <!-- abt section - one  open-->
+        <div class="about-one">
+          <span class="abt">About Me</span>
+          <p class="p-about">
+            A full-stack developer with a passion for creating exceptional web
+            experiences.
+          </p>
+        </div>
+        <!-- abt section - one  close-->
+
+        <!-- abt section - two open-->
+        <div class="about-two">
+          <div class="one">
+            <!-- educational details open -->
+            <span class="detail">➤ Education</span>
+            <br />
+            <ul>
+              <li>
+                <span class="abt-dtl">Mount Carmel Convent School <br /> </span>
+                <p class="p-about">
+                  In Katol<br />
+                  ~ 2005 - 18
+                </p>
+              </li>
+              <li>
+                <span class="abt-dtl">St. Paul's Jr. College Hudkeshwar, </span>
+                <p class="p-about">
+                  In Nagpur <br />
+                  ~ 2018 - 20
+                </p>
+              </li>
+
+              <li>
+                <span class="abt-dtl"
+                  >Indira Gandhi National University (UG)</span
+                >
+                <p class="p-about">
+                  In Nagpur <br />
+                  ~ 2022 - 25
+                </p>
+              </li>
+              <li>
+                <span class="abt-dtl"
+                  >Indira Gandhi National University (UG)</span
+                >
+                <p class="p-about">
+                  In Nagpur Master In SCIENCE <br />
+                  ~ 2025
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- educational details close -->
+
+          <!-- experience section open -->
+          <div class="one">
+            <span class="detail">➤ Experience</span>
+            <br />
+            <ul>
+              <li>
+                <span class="abt-dtl">Intern <br /> </span>
+                <p class="p-about">
+                  As a Full Stack Developer In <br />Enjoy Programming PVT.
+                  LTD.<br />
+                  ~ Oct-24 - Present
+                </p>
+              </li>
+              <br />
+              <li>
+                <span class="abt-dtl">Intership <br /> </span>
+                <p class="p-about">
+                  As Web Developer<br />
+                  In Code Alpha <br />
+                  Nagpur <br />
+                  ~ May-25 to Present
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- experience section open -->
+
+          <!-- interest section open -->
+          <div class="one">
+            <span class="detail"> ➤ Interest's</span>
+            <br />
+            <ul>
+              <li>
+                <span class="abt-dtl"><u>Programming</u> <br /> </span>
+                <p class="p-about">Front-end Development</p>
+              </li>
+              <br />
+              <li>
+                <span class="abt-dtl"
+                  ><u>Blending Front-End with AI</u> <br />
+                </span>
+                <p class="p-about">
+                  I'm constantly learning, growing, and <br />looking for ways
+                  to merge my front-end <br />skills with AI to build
+                  innovative,<br />
+                  next-gen web applications.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- interest section close -->
+        </div>
+        <!-- abt section - two close-->
+      </div>
+      <!-- project section open -->
+      <div class="project" id="project">
+        <div class="p-one">
+          <span class="abt">My Projects</span>
+          <hr class="hr-project" />
+          <p>
+            A curated selection of web development projects highlighting my
+            skills in front-end and back-end <br />
+            technologies, responsive design, and building user-centric digital
+            experiences.
+          </p>
+        </div>
+        <div class="p-two">
+          <!-- one -->
+          <div class="project-card">
+            <a id="anchor-tag" href="./HtmlCss_Projects.html">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                alt="HTML Project"
+                style="
+                  height: 90%;
+                  width: 90%;
+                  object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  opacity: 0.7;
+                "
+              />
+              <h2>
+                HTML <br />
+                & CSS
+              </h2>
+            </a>
+          </div>
+
+          <!-- three -->
+          <div class="project-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+              alt="JavaScript Project"
+              style="
+                height: 90%;
+                width: 90%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0.7;
+              "
+            />
+            <h2>JAVASCRIPT</h2>
+          </div>
+
+          <!-- two -->
+          <div class="project-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+              alt="CSS Project"
+              style="
+                height: 90%;
+                width: 90%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0.7;
+              "
+            />
+            <h2>
+              LIVE <br />
+              PROJECTS
+            </h2>
+          </div>
+           <!-- Four -->
+       <!-- <div class="project-card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+          alt="JavaScript Project"
+          style="
+            height: 90%;
+            width: 90%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+          "
+        />
+        <h2>Live Projects</h2>
+      </div> -->
+
+
+
+         <!-- Five -->
+         <!-- <div class="project-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            alt="JavaScript Project"
+            style="
+              height: 90%;
+              width: 90%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0.7;
+            "
+          />
+          <h2>Figma</h2>
+        </div> -->
+      <!-- project section close -->
+        </div>
+      </div>
+
+
+
+      
+
+      <!-- contact section open -->
+      <div class="contact" id="contact">
+        <!-- contact section one open -->
+        <div class="contact-one">
+          <span class="abt"> Get In Touch</span> <br />
+          <p>
+            If you're seeking a dedicated web developer for your next project,
+            <br />
+            I’d be happy to discuss how I can contribute to your goals. Let’s
+            connect.
+          </p>
+        </div>
+
+        <!-- contact section two open -->
+        <div class="contact-two">
+          <!-- cont-1 close -->
+          <div class="cont-1">
+            <!-- Phone -->
+            <a href="tel:+918421319751" class="contact-card">
+              <p>Schedule a call:</p>
+              <h3>+91 9527552556</h3>
+            </a>
+            <!-- Email -->
+            <a
+              href="mailto:vaishnavikinekar11062@gmail.com"
+              class="contact-card"
+            >
+              <p>Email:</p>
+              <h3>vaishnavikinekar11062@gmail.com</h3>
+            </a>
+
+            <!-- github -->
+            <a
+              href="https://github.com/Vaishnavi-Full-Stack-Developer/HTML_projects"
+              class="contact-card"
+            >
+              <p>Github ID:</p>
+              <h4>
+                https://github.com/Vaishnavi-Full-Stack-Developer/HTML_projects
+              </h4>
+            </a>
+
+            <!-- linkedin -->
+            <a
+              href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME"
+              class="contact-card"
+            >
+              <p>LinkedIn ID:</p>
+              <h4>linkedin.com/in/YOUR-LINKEDIN-USERNAME</h4>
+            </a>
+          </div>
+          <!-- cont-1 close -->
+          <!-- cont-2 open -->
+          <div class="cont-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7436.208902657629!2d78.58144509115519!3d21.26733262176914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd459e70ab1daff%3A0x3e5893171448cb24!2sLaxmi%20Nagar%2C%20Katol%2C%20Maharashtra%20441302!5e0!3m2!1sen!2sin!4v1747670402770!5m2!1sen!2sin"
+              width="600px"
+              height="320px"
+            ></iframe>
+          </div>
+          <!-- cont-2 close -->
+        </div>
+
+        <!-- contact section three footer section open -->
+        <div class="contact-footer">
+          © 2025 Vaishnavi Kinekar. All rights reserved. <br />
+          Powered by Enjoy Programming <br />
+          <div class="contact-footer-logo">
+            <!-- github -->
+            <a href=" " class="contact-items fab fa-github"></a>
+            <!-- email -->
+            <a
+              href="mailto:vaishnavikinekar11062@gmail.com"
+              class="contact-items fas fa-envelope"
+            ></a>
+            <!-- linked-in -->
+            <a href="" class="contact-items fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <!-- footer section close -->
+      </div>
+      <!-- contact section close -->
+    </div>
+  </body>
+</html>
